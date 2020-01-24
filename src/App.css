@@ -50,6 +50,7 @@
 }
 
 body {
+  
 	min-height: 100vh;
 	background-color: #fafafa;
 }
@@ -133,4 +134,102 @@ Remove or comment-out the code block below to see how the browser will fall-back
   margin-bottom: 0px;  
   width: 100%; 
   padding: 0px;
+}
+.bgimage {
+  /* The image used */
+  min-height: 100vh; 
+  background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0px; 
+  margin-bottom: 0px;  
+  width: 100%; 
+  padding: 0px;
+}
+
+.disableBlur {
+  filter: blur(0);
+}
+
+.insta-default {
+  display: flex;
+  padding-top: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+.insta-default a {
+  padding: 15px 30px;
+  display: block;
+  background-color: #E33E5C;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  color: #FFF;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.insta-default a:hover {
+  box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+.insta-default a i {
+  color: #FFF;
+  font-size: 18px;
+}
+.demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15rem;
+  margin-top: -26.5rem;
+  width: 30rem;
+  height: 53rem;
+  overflow: hidden;
+}
+
+.login {
+  position: relative;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(146, 135, 187, 0.8)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  transition: opacity 0.1s, transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25), -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.quote{
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  padding-top:30vh;
+  align-items: center;
+  color: white;
+}
+.login__check {
+  position: absolute;
+  top: 16rem;
+  left: 13.5rem;
+  width: 14rem;
+  height: 2.8rem;
+  background: #fff;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.login__check:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 2.8rem;
+  height: 5.2rem;
+  background: #fff;
+  box-shadow: inset -0.2rem -2rem 2rem rgba(0, 0, 0, 0.2);
 }

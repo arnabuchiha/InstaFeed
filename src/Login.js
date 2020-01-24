@@ -67,8 +67,19 @@ class Login extends Component{
     }
     else
     return(
-      <div>
-      <button onClick={()=>{window.location.href='https://www.instagram.com/oauth/authorize?app_id=606162323513468&redirect_uri=https://getauthcode.herokuapp.com/&scope=user_profile&response_type=code'}}>Login with Instagram</button>
+      <div >
+        <div className="bgimage">
+        <div className="demo">
+          <div className="login">
+            <div className="login__check"></div>
+            <h1 className="quote">INSTAFEED</h1>
+            <div className="insta-default">
+              <a href="https://www.instagram.com/oauth/authorize?app_id=606162323513468&redirect_uri=https://getauthcode.herokuapp.com/&scope=user_profile&response_type=code" className="insta-default">Log in with Instagram <i className="fa fa-instagram"></i></a>
+            </div>
+            {/* <button className="insta-default" onClick={()=>{window.location.href=''}}>LOGIN</button> */}
+            </div>
+        </div>
+        </div>
     </div>
     )
   }
