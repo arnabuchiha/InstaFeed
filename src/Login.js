@@ -57,13 +57,13 @@ class Login extends Component{
       console.log(err, data);
     };
     if(cookies.get('auth')!==undefined){
-      return <Redirect to={{
+      return (<Redirect to={{
         pathname:"/Home",
         state:{
           access_token:cookies.get('auth'),
           user_id:cookies.get('user_id')
         }
-      }}/>
+      }}/>)
     }
     else
     return(

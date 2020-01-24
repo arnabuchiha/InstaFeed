@@ -8,7 +8,7 @@ const cookies = new Cookies();
 const signOut=(e)=>{
     cookies.remove("auth");
     cookies.remove("user_id");
-    window.location.replace("http://localhost:3000/");
+    window.location.replace("https://socialid-2635e.firebaseapp.com/");
 }
 
 class UserPage extends Component{
