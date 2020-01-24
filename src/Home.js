@@ -42,6 +42,7 @@ class Home extends Component{
             })
         }).catch(err=>{
             console.log(err)
+            alert("Reload Once to fix")
         })
         const url=`https://graph.instagram.com/`+cookies.get("user_id")+"/media?access_token="+cookies.get("auth");
         fetch(url,{
@@ -69,7 +70,7 @@ class Home extends Component{
             
         }).catch(err=>{
             console.log(err)
-            alert("Something occurred...Try to reload")
+            
         });
         
     }
@@ -77,7 +78,6 @@ class Home extends Component{
     render(){
         // console.log(cookies.get('auth'));
         console.log(this.state.urls)
-
         return(
             <div>
                 <div className="banner">

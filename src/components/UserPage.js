@@ -38,7 +38,7 @@ class UserPage extends Component{
         return(
             <div>
                 <div className="banner">
-                    <button onClick={signOut} className="btn btn-primary btn-lg pull-right" style={{float:"right",marginRight:"40px",marginTop:"40px"}}>Sign Out</button>
+                    <button onClick={signOut} className="btn btn-primary btn-lg pull-right" style={{float:"right",marginRight:"40px",marginTop:"40px"}}>Home</button>
                 </div>
                 <CardList feeds={this.state.urls}/>
             </div>
