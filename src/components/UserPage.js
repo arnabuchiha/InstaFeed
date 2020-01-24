@@ -10,7 +10,9 @@ const signOut=(e)=>{
     cookies.remove("user_id");
     window.location.replace("https://socialid-2635e.firebaseapp.com/");
 }
-
+const encode=(str)=>{
+    return str.split(".").join(",")
+}
 class UserPage extends Component{
     
     constructor(){
@@ -22,7 +24,7 @@ class UserPage extends Component{
         Firebase.initializeApp(config);
     }
     componentDidMount(){
-        let ref=Firebase.database().ref("/"+this.props.match.params.id);
+        let ref=Firebase.database().ref("/"+encode(this.props.match.params.id));
         ref.on("value",snapshot=>{
             snapshot.forEach(url=>{
                 console.log(url.val().media_url);

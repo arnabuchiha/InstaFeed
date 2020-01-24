@@ -10,6 +10,9 @@ const signOut=(e)=>{
     cookies.remove("user_id");
     window.location.replace("https://socialid-2635e.firebaseapp.com/");
 }
+const encode=(str)=>{
+    return str.split(".").join(",")
+}
 class Home extends Component{
     constructor(){
         super()
@@ -22,7 +25,7 @@ class Home extends Component{
     writeUserData = (data) => {
         Firebase.database()
           .ref("/")
-          .set(data);
+          .child(data);
         console.log("DATA SAVED");
       };
     componentDidMount(){
@@ -33,12 +36,13 @@ class Home extends Component{
             method:'get'
         }).then((res)=>res.json())
         .then(data=>{
-            this.writeUserData(data.username)
+            const username=encode(data.username);
+            // this.writeUserData(username)
             // Firebase.database()
             // .ref("/")
             // .push(data.username);
             this.setState({
-                username:data.username
+                username:username
             })
         }).catch(err=>{
             console.log(err)
@@ -61,8 +65,10 @@ class Home extends Component{
                         urls:[...this.state.urls,rdata]
                     })
                     Firebase.database()
-                    .ref("/"+this.state.username)
-                    .push(rdata)
+                    .ref("/")
+                    .child(this.state.username)
+                    .child(rdata.id)
+                    .set(rdata)
                     
                 })
 
