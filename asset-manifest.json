@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/InstaFeed/static/css/main.f3411506.chunk.css",
+    "main.js": "/InstaFeed/static/js/main.a425799d.chunk.js",
+    "main.js.map": "/InstaFeed/static/js/main.a425799d.chunk.js.map",
+    "runtime-main.js": "/InstaFeed/static/js/runtime-main.69354799.js",
+    "runtime-main.js.map": "/InstaFeed/static/js/runtime-main.69354799.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/InstaFeed/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.76a3dce0.chunk.js": "/InstaFeed/static/js/2.76a3dce0.chunk.js",
+    "static/js/2.76a3dce0.chunk.js.map": "/InstaFeed/static/js/2.76a3dce0.chunk.js.map",
+    "index.html": "/InstaFeed/index.html",
+    "precache-manifest.0de8e504f1d5d405a749d281ff02b597.js": "/InstaFeed/precache-manifest.0de8e504f1d5d405a749d281ff02b597.js",
+    "service-worker.js": "/InstaFeed/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/InstaFeed/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.f3411506.chunk.css.map": "/InstaFeed/static/css/main.f3411506.chunk.css.map",
+    "static/js/2.76a3dce0.chunk.js.LICENSE": "/InstaFeed/static/js/2.76a3dce0.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69354799.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.76a3dce0.chunk.js",
+    "static/css/main.f3411506.chunk.css",
+    "static/js/main.a425799d.chunk.js"
+  ]
+}
